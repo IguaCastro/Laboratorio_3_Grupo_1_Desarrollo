@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class App {
+public class App3 {
 
     private ArrayList<Digital> users;
 
-    public App() {
+    public App3() {
         users = new ArrayList<>();
         users.add(new Digital("RomelJ", "romel.j"));
         users.add(new Digital("romelP", "JJ29"));
