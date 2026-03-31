@@ -3,13 +3,13 @@ public class Mission {
      private int id;
      private String name;
      private String difficulty;
-     private String state;
+     private String status;
 
-     public Mission(int id,String name,String difficulty,String state){
-        this.id = id;
-        this.name = name;
-        this.difficulty = difficulty;
-        this.state = state;
+     public Mission(int id, String name, String difficulty, String status) {
+    this.id = id;
+    this.name = name;
+    this.difficulty = difficulty;
+    this.status = status;
     }
         public int getId(){
         return this.id;
@@ -33,10 +33,24 @@ public class Mission {
     }
 
         public String getState(){
-        return this.state ; 
+        return this.status ; 
     }  
-        public void setState(String state){
-        this.state = state;
+        public void setStatus(String status){
+        this.status = status;
 
+    
     }
+    public void completeMission(){
+        this.status="completada";
+    }
+    public void showInfo() {
+        System.out.println(
+            "ID: " + id +
+            ", Misión: " + name +
+            ", Dificultad: " + difficulty +
+              ", Estado: " + status);
+        
+    }
+
 }
+    
