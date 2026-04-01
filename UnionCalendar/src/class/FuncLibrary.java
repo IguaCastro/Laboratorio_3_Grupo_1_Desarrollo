@@ -2,12 +2,13 @@ public class FuncLibrary {
 
     GuildLibrary guildLibrary = new GuildLibrary(0, 0, 0, 0);
 
-    public void sum(int[] array){
+    public int sum(int[] array){
         int sum = 0;
         for(int i = 0; i < array.length; i++){
             sum += array[i];
         }
         guildLibrary.setSum(sum);
+        return sum;
     }
 
     public void average(int[] array){
@@ -35,4 +36,5 @@ public class FuncLibrary {
         }
         guildLibrary.setMinimun(minimun);
     }
+
 }
