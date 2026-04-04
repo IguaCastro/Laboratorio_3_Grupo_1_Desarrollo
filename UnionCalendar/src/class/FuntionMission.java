@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class FuntionMission {
 
     public void listMissions(Mission[] missions) {
