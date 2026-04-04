@@ -1,12 +1,24 @@
-public class App1{ 
-   
+public class App1 {
+
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5};
-        FuncLibrary funcLibrary = new FuncLibrary();
-        funcLibrary.sum(array);
-        funcLibrary.average(array);
-        funcLibrary.maximun(array);
-        funcLibrary.minimun(array);
+        try {
+            FuncLibrary funcLibrary = new FuncLibrary();
+            int[] array = {20, 52, 66, 4, 1};
+
+            int sum = funcLibrary.sum(array);
+            System.out.println("The sum is: " + sum);
+
+            funcLibrary.average(array);
+            System.out.println("The average is: " + funcLibrary.guildLibrary.getAverage());
+
+            funcLibrary.maximun(array);
+            System.out.println("The maximum is: " + funcLibrary.guildLibrary.getMaximun());
+
+            funcLibrary.minimun(array);
+            System.out.println("The minimum is: " + funcLibrary.guildLibrary.getMinimun());
+
+        } catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
+        }
     }
 }
-

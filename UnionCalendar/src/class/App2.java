@@ -4,7 +4,7 @@ public class App2 {
         Scanner sc = new Scanner (System.in);
         Guild guild = new Guild();
         int option;
-
+            
         do {
             System.out.println("\n=================================");
             System.out.println("======== Agenda del Gremio ========");
