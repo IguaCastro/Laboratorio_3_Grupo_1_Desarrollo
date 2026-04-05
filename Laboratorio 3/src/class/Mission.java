@@ -32,7 +32,7 @@ public class Mission {
         this.difficulty = difficulty; 
     }
 
-        public String getState(){
+        public String getStatus(){
         return this.status ; 
     }  
         public void setStatus(String status){
